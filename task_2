@@ -1,0 +1,10 @@
+s = str(input())
+k1 = 0
+k2 = 0
+for i in range(0, len(s)):
+    if s[i] != " ":
+        k1 += 1
+    else:
+        k2 = k1
+        k1 = 0
+print(k1)
