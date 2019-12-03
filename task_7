@@ -1,0 +1,22 @@
+s = str(input())
+start = ""
+end = ""
+
+for i in range(0, len(s)):
+    if i % 2 == 0:
+        end += s[i]
+    if i % 2 != 0:
+        start += s[i]
+        
+print("Чётные символы:" + str(start))
+print("Нечётные символы:" + str(end))
+
+end1 = ""
+k = len(end) - 1
+while k >= 0:
+    end1 += end[k]
+    k -= 1
+print("Реверс нечётных символов:" + str(end1))
+
+final = start + end1
+print("\nОтвет: " + " |" + str(final) + "| ")
