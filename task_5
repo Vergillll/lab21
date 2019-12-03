@@ -1,0 +1,12 @@
+s = str(input())
+k = len(s) - 1
+d = ord(s[2])
+d = chr(d)
+
+while k > 0:
+    if s[k] == d:
+        break
+    k -= 1
+
+k += 1
+print(s[k:len(s)])
