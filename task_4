@@ -1,0 +1,11 @@
+s = str(input())
+g = "аеёиоуыэюя"
+g1 = "АЕЁИОУЫЭЮЯ"
+k = 0
+
+for i in range(0, len(s)):
+    for j in range(0, len(g)):
+        if s[i] == g[j] or s[i] == g1[j]:
+            k += 1
+
+print(k)
